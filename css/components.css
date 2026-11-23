@@ -1,0 +1,471 @@
+/* ---------- Button ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px 32px;
+  border-radius: var(--radius-pill);
+  font-size: var(--type-button);
+  font-weight: 700;
+  line-height: 1.3;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.btn--md {
+  padding: 10px 24px;
+}
+
+.btn__icon {
+  flex: none;
+  width: 22px;
+  height: 22px;
+}
+
+.btn--md .btn__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.btn__arrow {
+  flex: none;
+  width: 14px;
+  height: 12px;
+  margin: -1px;
+}
+
+.btn--whatsapp {
+  background: var(--action-whatsapp);
+  color: var(--text-on-brand);
+}
+
+.btn--whatsapp:hover {
+  background: var(--action-whatsapp-hover);
+}
+
+.btn--outline {
+  border: 1.5px solid var(--border-brand);
+  color: var(--text-link);
+}
+
+.btn--outline:hover {
+  background: rgba(0, 116, 179, 0.08);
+}
+
+.btn--on-dark {
+  background: var(--bg-page);
+  color: var(--text-heading);
+}
+
+.btn--on-dark:hover {
+  background: var(--text-on-brand-muted);
+}
+
+.btn--outline-on-dark {
+  border: 1.5px solid var(--text-on-brand);
+  color: var(--text-on-brand);
+}
+
+.btn--outline-on-dark:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.btn--block {
+  width: 100%;
+}
+
+/* ---------- Section heading ---------- */
+.overline {
+  color: var(--text-accent);
+  font-size: var(--type-overline);
+  font-weight: 700;
+  line-height: 1.55;
+}
+
+.h2 {
+  color: var(--text-heading);
+  font-size: var(--type-h2);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.lead {
+  color: var(--text-secondary);
+  font-size: var(--type-body-lg);
+  font-weight: 400;
+  line-height: 1.75;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  text-align: center;
+}
+
+.heading .lead {
+  max-width: 720px;
+}
+
+/* ---------- Contour-line pattern ---------- */
+.pattern {
+  position: absolute;
+  inset-inline: 0;
+  top: 0;
+  height: 640px;
+  background: url("../assets/icons/pattern.svg") center top / 1440px 640px repeat-x;
+  pointer-events: none;
+}
+
+/* ---------- Highlight card ---------- */
+.highlight {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 28px;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  background: var(--action-accent-hover);
+  color: var(--text-on-brand);
+}
+
+.highlight__value {
+  font-size: var(--type-h2);
+  font-weight: 700;
+  line-height: 1.35;
+  white-space: nowrap;
+  text-align: right;
+}
+
+.highlight__label {
+  font-size: var(--type-body-md);
+  font-weight: 500;
+  line-height: 1.75;
+}
+
+.highlight__watermark {
+  position: absolute;
+  left: -23px;
+  top: 57px;
+  width: 126px;
+  height: 66px;
+  max-width: none;
+}
+
+@media (max-width: 1199px) {
+  .highlight__watermark {
+    width: 88px;
+  }
+}
+
+@media (max-width: 767px) {
+  .highlight {
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+    padding: 18px 20px;
+    border-radius: var(--radius-sm);
+    white-space: nowrap;
+  }
+
+  .highlight__value {
+    font-size: var(--type-h3);
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .highlight__watermark {
+    display: none;
+  }
+}
+
+/* ---------- Course card ---------- */
+.course {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-lg);
+  background: var(--bg-page);
+  box-shadow: var(--elevation-md);
+}
+
+.course__media {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex: none;
+  height: 232px;
+  padding: 16px 16px 0;
+  overflow: hidden;
+}
+
+.course__media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center var(--focus-y, 50%);
+}
+
+.badge {
+  position: relative;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  background: var(--bg-page);
+  color: var(--text-link);
+  font-size: var(--type-caption);
+  font-weight: 500;
+  line-height: 1.65;
+  white-space: nowrap;
+}
+
+.course__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+}
+
+.course__code {
+  color: var(--text-accent);
+  font-family: var(--font-en);
+  font-size: var(--type-overline);
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.course__title {
+  color: var(--text-heading);
+  font-size: var(--type-h4);
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.course__desc {
+  color: var(--text-secondary);
+  font-size: var(--type-body-sm);
+  line-height: 1.7;
+}
+
+.course__desc strong {
+  color: var(--text-body);
+  font-weight: 400;
+}
+
+.course__details {
+  color: var(--text-body);
+  font-size: var(--type-body-sm);
+  line-height: 1.7;
+}
+
+/* main.js wraps the bullets + description in .course__collapse and adds the toggle button:
+   only the first four lines of the card's text show until it is pressed. */
+.course__collapse {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: var(--type-body-sm);
+  line-height: 1.7;
+}
+
+.course__collapse.is-clamped {
+  max-height: calc(1.7em * 4);
+  overflow: hidden;
+}
+
+.course__more {
+  align-self: flex-start;
+  margin-top: -6px;
+  color: var(--text-link);
+  font-size: var(--type-body-sm);
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.course__more:hover {
+  text-decoration: underline;
+}
+
+.course__details li::before {
+  content: "•  ";
+  white-space: pre;
+}
+
+.course__divider {
+  flex: none;
+  /* Pushes price and button to the bottom so cards in a row stay aligned. */
+  margin-top: auto;
+  height: 1px;
+  background: var(--bg-muted);
+}
+
+.course__price-label {
+  color: var(--text-muted);
+  font-size: var(--type-caption);
+  font-weight: 500;
+  line-height: 1.65;
+}
+
+.course__price {
+  color: var(--text-link);
+  font-size: var(--type-h4);
+  font-weight: 600;
+  line-height: 1.45;
+  white-space: nowrap;
+}
+
+/* ---------- Payment logo tile ---------- */
+.pay {
+  --s: 1;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  height: calc(88px * var(--s));
+  overflow: hidden;
+  border-radius: calc(16px * var(--s));
+}
+
+.pay img {
+  flex: none;
+  max-width: none;
+  object-fit: cover;
+}
+
+.pay--tabby {
+  width: calc(200px * var(--s));
+}
+
+.pay--tabby img {
+  width: calc(234px * var(--s));
+  height: calc(97px * var(--s));
+}
+
+.pay--visa {
+  width: calc(200px * var(--s));
+}
+
+.pay--visa img {
+  width: calc(200px * var(--s));
+  height: calc(65px * var(--s));
+}
+
+.pay--applepay {
+  width: calc(208px * var(--s));
+}
+
+.pay__crop {
+  position: relative;
+  flex: none;
+  width: calc(200px * var(--s));
+  height: calc(84px * var(--s));
+  overflow: hidden;
+}
+
+.pay__crop img {
+  position: absolute;
+  left: -10.6%;
+  top: -0.48%;
+  width: 119.08%;
+  height: 100.11%;
+  object-fit: fill;
+}
+
+.pay--tamara {
+  width: calc(184px * var(--s));
+  height: calc(76px * var(--s));
+}
+
+.pay--tamara img {
+  width: 100%;
+  height: 100%;
+}
+
+.pay--mada {
+  width: calc(203px * var(--s));
+  border: 1px solid var(--border-default);
+}
+
+.pay--mada img {
+  width: calc(192px * var(--s));
+  height: calc(74px * var(--s));
+}
+
+.pay--mastercard {
+  width: calc(137px * var(--s));
+}
+
+.pay--mastercard img {
+  width: calc(97px * var(--s));
+  height: calc(76px * var(--s));
+}
+
+@media (max-width: 1199px) {
+  .pay {
+    --s: 0.72;
+  }
+}
+
+@media (max-width: 767px) {
+  .pay {
+    --s: 0.5;
+  }
+}
+
+/* ---------- Floating WhatsApp button ---------- */
+.fab {
+  position: fixed;
+  right: 32px;
+  bottom: 32px;
+  z-index: 40;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-pill);
+  background: var(--action-whatsapp-fab);
+  filter: drop-shadow(0 10px 12px rgba(8, 97, 56, 0.35));
+  transition: transform 0.15s ease;
+}
+
+.fab:hover {
+  transform: scale(1.06);
+}
+
+.fab img {
+  width: 32px;
+  height: 32px;
+}
+
+@media (max-width: 1199px) {
+  .fab {
+    right: 24px;
+    bottom: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .fab {
+    right: 16px;
+    bottom: 16px;
+    width: 56px;
+    height: 56px;
+  }
+
+  .fab img {
+    width: 28px;
+    height: 28px;
+  }
+}

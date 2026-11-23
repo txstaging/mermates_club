@@ -1,0 +1,85 @@
+/* Design tokens — mirrored from the Figma variables (Desktop 1440 / Tablet 768 / Mobile 375). */
+:root {
+  /* Color */
+  --bg-page: #ffffff;
+  --bg-subtle: #f5f5f5;
+  --bg-muted: #eef0f3;
+  --bg-brand: #003077;
+  --bg-brand-deep: #001538;
+  --bg-details: #eef9ff;
+  --text-heading: #003077;
+  --text-body: #222932;
+  --text-secondary: #4f5865;
+  --text-muted: #6e7785;
+  --text-accent: #0090cc;
+  --text-link: #0074b3;
+  --text-on-brand: #ffffff;
+  --text-on-brand-muted: #c2e1f2;
+  --border-default: #dee2e8;
+  --border-brand: #0074b3;
+  --action-whatsapp: #0b7a4b;
+  --action-whatsapp-hover: #096a41;
+  --action-whatsapp-fab: #25d366;
+  --action-accent-hover: #007aad;
+
+  /* Type */
+  --font-ar: "Cairo", system-ui, "Segoe UI", Tahoma, sans-serif;
+  --font-en: "Montserrat", "Cairo", system-ui, sans-serif;
+  --type-display: 72px;
+  --type-h1: 56px;
+  --type-h2: 44px;
+  --type-h3: 24px;
+  --type-h4: 24px;
+  --type-h5: 20px;
+  --type-body-lg: 18px;
+  --type-body-md: 16px;
+  --type-body-sm: 14px;
+  --type-overline: 14px;
+  --type-caption: 12px;
+  --type-button: 16px;
+
+  /* Layout */
+  --page-margin: 40px;
+  --section-y: 120px;
+  --stack-gap: 64px;
+  --container: 1600px;
+  --nav-h: 97px;
+
+  /* Shape & elevation */
+  --radius-pill: 999px;
+  --radius-lg: 24px;
+  --radius-md: 20px;
+  --radius-sm: 16px;
+  --elevation-md: 0 8px 24px 0 rgba(0, 48, 119, 0.1);
+}
+
+/* Tablet */
+@media (max-width: 1199px) {
+  :root {
+    --type-display: 56px;
+    --type-h1: 44px;
+    --type-h2: 36px;
+    --type-h4: 22px;
+    --type-overline: 13px;
+    --page-margin: 32px;
+    --section-y: 80px;
+    --stack-gap: 48px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  :root {
+    --type-display: 36px;
+    --type-h1: 34px;
+    --type-h2: 28px;
+    --type-h4: 20px;
+    --type-body-lg: 16px;
+    --type-overline: 12px;
+    --type-button: 15px;
+    --page-margin: 16px;
+    --section-y: 64px;
+    --stack-gap: 40px;
+    --nav-h: 73px;
+  }
+}

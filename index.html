@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ميرميتس | مركز غوص في جدة — دورات SSI وتجارب البحر الأحمر</title>
+  <meta name="description" content="اكتشف جمال البحر الأحمر في جدة مع ميرميتس. تجارب غوص آمنة وممتعة ودورات معتمدة من SSI بإشراف مدربين متخصصين.">
+  <meta name="theme-color" content="#003077">
+  <link rel="icon" href="assets/icons/wave-circle.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+</head>
+<body>
+
+  <!-- WhatsApp number: 0553003938, written in international format (966553003938) in every wa.me link. -->
+
+  <header class="nav">
+    <div class="nav__inner container">
+      <a class="logo" href="#top" aria-label="ميرميتس — الرئيسية">
+        <img src="assets/images/logo.png" alt="">
+      </a>
+
+      <nav aria-label="التنقل الرئيسي">
+        <ul class="nav__links" id="nav-links">
+          <li><a class="is-active" href="#top">الرئيسية</a></li>
+          <li><a href="#about">من نحن</a></li>
+          <li><a href="#courses">كورساتنا</a></li>
+          <li><a href="#payment">طرق الدفع</a></li>
+          <li><a href="https://wa.me/966553003938?text=مرحبًا%20ميرميتس" target="_blank" rel="noopener">تواصل معنا</a></li>
+          <li class="nav__menu-cta">
+            <a class="btn btn--md btn--whatsapp btn--block" href="https://wa.me/966553003938?text=مرحبًا%20ميرميتس" target="_blank" rel="noopener">
+              <img class="btn__icon" src="assets/icons/whatsapp.svg" alt="">
+              تواصل واتساب
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="nav__actions">
+        <a class="btn btn--md btn--whatsapp" href="https://wa.me/966553003938?text=مرحبًا%20ميرميتس" target="_blank" rel="noopener">
+          <img class="btn__icon" src="assets/icons/whatsapp.svg" alt="">
+          تواصل واتساب
+        </a>
+        <button class="nav__toggle" type="button" aria-label="القائمة" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="pattern" aria-hidden="true"></div>
+
+      <h1 class="hero__headline">
+        <span class="hero__line">
+          <span>مغامرتك تحت الماء</span>
+          <video class="hero__pill" poster="assets/videos/hero-pill-cover.jpg" autoplay muted loop playsinline preload="metadata" aria-hidden="true">
+            <source src="assets/videos/hero-pill.mp4" type="video/mp4">
+          </video>
+        </span>
+        <span class="hero__line">
+          <span>تبدأ مع</span>
+          <img class="hero__wave" src="assets/icons/wave-circle.svg" alt="" width="72" height="72">
+          <span class="hero__accent">ميرميتس</span>
+        </span>
+      </h1>
+
+      <p class="hero__text">اكتشف جمال البحر الأحمر في جدة مع ميرميتس، واستمتع بتجارب غوص آمنة وممتعة بإشراف مدربين معتمدين من SSI. سواء كانت هذه أول تجربة لك أو كنت مستعدًا للحصول على شهادة غوص، مغامرتك تبدأ من هنا.</p>
+
+      <div class="hero__ctas">
+        <a class="btn btn--whatsapp" href="https://wa.me/966553003938?text=مرحبًا%20ميرميتس،%20أود%20حجز%20مغامرة%20غوص" target="_blank" rel="noopener">
+          <img class="btn__icon" src="assets/icons/whatsapp.svg" alt="">
+          احجز مغامرتك الآن
+        </a>
+        <a class="btn btn--outline" href="#courses">
+          اكتشف كورساتنا
+          <img class="btn__arrow" src="assets/icons/arrow-blue.svg" alt="">
+        </a>
+      </div>
+
+      <div class="hero__strip">
+        <div class="hero__track">
+          <div class="hero__photo hero__photo--1">
+            <video poster="assets/videos/hero-1-cover.jpg" autoplay muted loop playsinline preload="metadata" aria-label="غواص تحت الماء">
+              <source src="assets/videos/hero-1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="hero__photo hero__photo--2">
+            <video poster="assets/videos/hero-2-cover.jpg" autoplay muted loop playsinline preload="metadata" aria-label="قنديل بحر في أعماق البحر الأحمر">
+              <source src="assets/videos/hero-2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="hero__photo hero__photo--3">
+            <video poster="assets/videos/hero-3-cover.jpg" autoplay muted loop playsinline preload="metadata" aria-label="معدات الغوص تحت الماء">
+              <source src="assets/videos/hero-3.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+      <!-- Slider dots (tablet / mobile only) — filled in by main.js -->
+      <div class="hero__dots" role="group" aria-label="التنقل بين الفيديوهات"></div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="section__inner container">
+        <div class="about__row">
+          <div class="about__text">
+            <p class="overline">من نحن</p>
+            <h2 class="h2">ميرميتس بوابتك إلى عالم الغوص</h2>
+            <p class="lead">ميرميتس (Mermates Club) هو مركز غوص في جدة، المملكة العربية السعودية، يقدم دورات تدريبية معتمدة من SSI وتجارب غوص لاستكشاف البحر الأحمر. بخبرة تزيد عن 12 سنوات، يرافقك فريقنا من المدربين المتخصصين لتتعلم مهارات الغوص وتستمتع بتجربة مناسبة لمستواك، من أول غطسة حتى الشهادات المعتمدة.</p>
+            <ul class="highlights">
+              <li class="highlight">
+                <span class="highlight__value" dir="ltr">+12</span>
+                <span class="highlight__label">أكثر من 12 سنوات من الخبرة</span>
+                <img class="highlight__watermark" src="assets/icons/watermark.svg" alt="">
+              </li>
+              <li class="highlight">
+                <span class="highlight__value">SSI</span>
+                <span class="highlight__label">تدريب معتمد من SSI</span>
+                <img class="highlight__watermark" src="assets/icons/watermark.svg" alt="">
+              </li>
+              <li class="highlight">
+                <span class="highlight__value" dir="ltr">+2500</span>
+                <span class="highlight__label">أكثر من 2500 عميل</span>
+                <img class="highlight__watermark" src="assets/icons/watermark.svg" alt="">
+              </li>
+            </ul>
+          </div>
+          <video class="about__photo" poster="assets/videos/about-team-cover.jpg" autoplay muted loop playsinline preload="metadata" aria-label="فريق ميرميتس تحت الماء">
+            <source src="assets/videos/about-team.mp4" type="video/mp4">
+          </video>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Courses -->
+    <section class="section courses" id="courses">
+      <div class="pattern" aria-hidden="true"></div>
+      <div class="section__inner container">
+        <div class="heading">
+          <p class="overline">كورساتنا</p>
+          <h2 class="h2">اختر تجربتك وابدأ المغامرة</h2>
+          <p class="lead">من أول نفس تحت الماء إلى شهادة الغوص المعتمدة، اكتشف البرنامج الذي يناسبك مع ميرميتس.</p>
+        </div>
+
+        <div class="courses__grid">
+          <article class="course">
+            <div class="course__media">
+              <img src="assets/images/course-open-water.png" alt="غواص معتمد في المياه المفتوحة" loading="lazy">
+              <span class="badge">شهادة SSI معتمدة</span>
+            </div>
+            <div class="course__body">
+              <p class="course__code" dir="ltr">Open Water Diver</p>
+              <h3 class="course__title">دورة غواص المياه المفتوحة</h3>
+              <ul class="course__details">
+                <li>العمر الأدنى: 10 سنوات</li>
+                <li>مدة التدريب المقترحة: 16 – 32 ساعة</li>
+                <li>التدريب: 6 جلسات نظرية، و6 جلسات في المسبح أو المياه المحصورة، و4 غوصات في المياه المفتوحة</li>
+                <li>العمق الأقصى للتدريب: 18 مترًا</li>
+                <li>المتطلبات: القدرة على السباحة، ولا تُشترط شهادة غوص سابقة</li>
+              </ul>
+              <p class="course__desc">ابدأ رحلتك لتصبح غواصًا معتمدًا دوليًا مع برنامج SSI Open Water Diver. يجمع التدريب بين المعرفة النظرية والتطبيق العملي في المسبح والمياه المفتوحة، لتتعلم استخدام المعدات، والتحكم في الحركة والتنفس، ومهارات الغوص الأساسية والسلامة. <strong>بعد إكمال البرنامج بنجاح، تحصل على شهادة SSI Open Water Diver التي تؤهلك للغوص حتى عمق 18 مترًا وفق حدود الشهادة ومتطلبات السلامة.</strong></p>
+              <div class="course__divider"></div>
+              <div>
+                <p class="course__price-label">السعر</p>
+                <p class="course__price">2,400 – 2,650 ر.س</p>
+              </div>
+              <a class="btn btn--whatsapp btn--block" href="https://wa.me/966553003938?text=مرحبًا%20ميرميتس،%20أود%20حجز%20دورة%20غواص%20المياه%20المفتوحة%20(Open%20Water%20Diver)" target="_blank" rel="noopener">
+                <img class="btn__icon" src="assets/icons/whatsapp.svg" alt="">
+                احجز الدورة الآن
+              </a>
+            </div>
+          </article>
+
+          <article class="course">
+            <div class="course__media" style="--focus-y: 30%">
+              <img src="assets/images/course-scuba-diver.webp" alt="غواص يسبح بجانب سمكة قرش في المياه العميقة" loading="lazy">
+              <span class="badge">شهادة SSI للمبتدئين</span>
+            </div>
+            <div class="course__body">
+              <p class="course__code" dir="ltr">Scuba Diver</p>
+              <h3 class="course__title">دورة غواص سكوبا المعتمد</h3>
+              <ul class="course__details">
+                <li>العمر: من 10 سنوات.</li>
+                <li>المدة: 10–16 ساعة تدريبية.</li>
+                <li>العمق: حتى 12 مترًا برفقة محترف SSI.</li>
+                <li>التدريب: 3 جلسات نظرية، وجلستان في المياه المحصورة، وغوصتان في المياه المفتوحة.</li>
+                <li>المتطلبات: القدرة على السباحة، ولا يشترط الحصول على شهادة غوص سابقة.</li>
+                <li>الشهادة: SSI Scuba Diver Certification.</li>
+              </ul>
+              <p class="course__desc">ابدأ رحلتك في عالم الغوص مع دورة Scuba Diver من SSI، وتعلم المهارات الأساسية لاستخدام معدات الغوص والتعامل بأمان تحت الماء. استمتع بتجربة الغوص حتى عمق 12 مترًا برفقة مدرب محترف، واحصل على شهادة معتمدة تتيح لك استكمال تدريبك لاحقًا للحصول على شهادة Open Water Diver.</p>
+              <div class="course__divider"></div>
+              <div>
+                <p class="course__price-label">السعر</p>
+                <p class="course__price">1,700 – 1,800 ر.س</p>
+              </div>
+              <a class="btn btn--whatsapp btn--block" href="https://wa.me/966553003938?text=مرحبًا%20ميرميتس،%20أود%20حجز%20دورة%20غواص%20سكوبا%20المعتمد%20(Scuba%20Diver)" target="_blank" rel="noopener">
+                <img class="btn__icon" src="assets/icons/whatsapp.svg" alt="">
+                احجز الدورة الآن
+              </a>
+            </div>
+          </article>
+
+          <article class="course">
+            <div class="course__media" style="--focus-y: 13%">
+              <img src="assets/images/course-try-scuba.png" alt="غواص مبتدئ فوق الشعاب المرجانية" loading="lazy">
+              <span class="badge">أول تجربة غوص</span>
+            </div>
+            <div class="course__body">
+              <p class="course__code" dir="ltr">Try Scuba</p>
+              <h3 class="course__title">جرب الغوص</h3>
+              <ul class="course__details">
+                <li>العمر الأدنى: 8 سنوات</li>
+                <li>مدة البرنامج المقترحة: 2 – 5 ساعات</li>
+                <li>التدريب: جلسة نظرية واحدة وجلسة واحدة في المسبح أو المياه المحصورة</li>
+                <li>العمق الأقصى للتدريب: 5 أمتار</li>
+                <li>المتطلبات: القدرة على السباحة، ولا تُشترط شهادة سابقة</li>
+              </ul>
+              <p class="course__desc">هل ترغب في تجربة التنفس تحت الماء لأول مرة؟ يمنحك برنامج SSI Try Scuba مقدمة عملية للغوص في بيئة مياه محصورة وتحت الإشراف المباشر لمدرب معتمد. تتعلم أساسيات المعدات والتنفس الآمن، ثم تستمتع بأول تجربة لك تحت الماء. <strong>في نهاية التجربة تحصل على بطاقة SSI Try Scuba التقديرية؛ وهي ليست شهادة غواص مياه مفتوحة.</strong></p>
+              <div class="course__divider"></div>
+              <div>
+                <p class="course__price-label">السعر</p>
+                <p class="course__price">550 – 650 ر.س</p>
+              </div>
+              <a class="btn btn--whatsapp btn--block" href="https://wa.me/966553003938?text=مرحبًا%20ميرميتس،%20أود%20حجز%20تجربة%20Try%20Scuba" target="_blank" rel="noopener">
+                <img class="btn__icon" src="assets/icons/whatsapp.svg" alt="">
+                جرب الغوص الآن
+              </a>
+            </div>
+          </article>
+
+          <article class="course">
+            <div class="course__media" style="--focus-y: 18.6%">
+              <img src="assets/images/course-snorkeling.png" alt="سنوركلينج فوق الشعاب المرجانية مع سلحفاة بحرية" loading="lazy">
+              <span class="badge">من سطح الماء</span>
+            </div>
+            <div class="course__body">
+              <p class="course__code" dir="ltr">Snorkeling</p>
+              <h3 class="course__title">جرب اسنوركلينج</h3>
+              <ul class="course__details">
+                <li>التجربة: مشاهدة الشعاب المرجانية والحياة البحرية من سطح الماء</li>
+                <li>المستوى: مناسبة للمبتدئين ومحبي الأنشطة البحرية</li>
+                <li>الأنشطة: يقدم ميرميتس السنوركلينج ضمن تجاربه ورحلاته البحرية</li>
+              </ul>
+              <p class="course__desc">استمتع بمشاهدة الحياة البحرية في البحر الأحمر من سطح الماء، واكتشف الشعاب المرجانية والأسماك الملونة خلال تجربة سنوركلينج ممتعة في جدة. خيار مناسب لمن يرغب في استكشاف جمال البحر والاستمتاع بالمياه دون الالتحاق بدورة غوص سكوبا.</p>
+              <div class="course__divider"></div>
+              <div>
+                <p class="course__price-label">السعر</p>
+                <p class="course__price">350 - 400 ر.س</p>
+              </div>
+              <a class="btn btn--whatsapp btn--block" href="https://wa.me/966553003938?text=مرحبًا%20ميرميتس،%20أود%20حجز%20تجربة%20السنوركلينج" target="_blank" rel="noopener">
+                <img class="btn__icon" src="assets/icons/whatsapp.svg" alt="">
+                احجز تجربتك الآن
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Payment -->
+    <section class="section" id="payment">
+      <div class="section__inner">
+        <div class="heading container">
+          <p class="overline">طرق الدفع</p>
+          <h2 class="h2">خيارات دفع مرنة لمغامرتك القادمة</h2>
+          <p class="lead">اختر طريقة الدفع التي تناسبك واستعد لتجربتك المقبلة مع ميرميتس.</p>
+        </div>
+
+        <ul class="payment__logos">
+          <li class="pay pay--tabby"><img src="assets/images/pay-1.png" alt="tabby" loading="lazy"></li>
+          <li class="pay pay--visa"><img src="assets/images/pay-2.png" alt="Visa" loading="lazy"></li>
+          <li class="pay pay--applepay"><span class="pay__crop"><img src="assets/images/pay-3.png" alt="Apple Pay" loading="lazy"></span></li>
+          <li class="pay pay--tamara"><img src="assets/images/pay-4.png" alt="tamara" loading="lazy"></li>
+          <li class="pay pay--mada"><img src="assets/images/pay-5.png" alt="mada" loading="lazy"></li>
+          <li class="pay pay--mastercard"><img src="assets/images/pay-6.png" alt="Mastercard" loading="lazy"></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta" id="book">
+      <div class="pattern" aria-hidden="true"></div>
+      <div class="section__inner container">
+        <h2 class="cta__title">هل أنت مستعد لاكتشاف عالم تحت الماء؟</h2>
+        <p class="cta__text">اختر تجربتك المفضلة وانطلق مع ميرميتس في مغامرة لا تُنسى في البحر الأحمر. فريقنا مستعد لمساعدتك في اختيار البرنامج المناسب والبدء بثقة.</p>
+        <a class="btn btn--on-dark" href="https://wa.me/966553003938?text=مرحبًا%20ميرميتس،%20أود%20حجز%20مغامرة%20غوص" target="_blank" rel="noopener">
+          احجز تجربتك الآن
+          <img class="btn__arrow" src="assets/icons/arrow-navy.svg" alt="">
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div class="footer__inner container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <img class="footer__logo" src="assets/images/logo-white.svg" alt="Mermates — Dive with purpose" width="112" height="109">
+          <p class="footer__tagline">مركز غوص في جدة، المملكة العربية السعودية · تدريب معتمد من SSI</p>
+          <p class="footer__contact">
+            <span class="footer__contact-label">تواصل معنا</span>
+            <a class="footer__phone" href="tel:+966553003938" dir="ltr">0553003938</a>
+          </p>
+        </div>
+        <div class="footer__nav">
+          <ul class="footer__links">
+            <li><a href="#about">من نحن</a></li>
+            <li><a href="#courses">كورساتنا</a></li>
+            <li><a href="#payment">طرق الدفع</a></li>
+            <li><a href="https://wa.me/966553003938?text=مرحبًا%20ميرميتس" target="_blank" rel="noopener">تواصل معنا</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 ميرميتس (Mermates Club). جميع الحقوق محفوظة.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a class="fab" href="https://wa.me/966553003938?text=مرحبًا%20ميرميتس،%20أود%20الاستفسار%20عن%20كورسات%20الغوص" target="_blank" rel="noopener" aria-label="تواصل معنا عبر واتساب">
+    <img src="assets/icons/whatsapp.svg" alt="">
+  </a>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
