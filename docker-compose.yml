@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: mermets-site:latest
+    container_name: mermets-site
+    restart: unless-stopped
+    ports:
+      - "3077:3000"
